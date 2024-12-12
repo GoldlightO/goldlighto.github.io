@@ -1,0 +1,956 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background-color: #F9F9F9;
+}
+
+.navbar {
+  font-family: Inter;
+  padding: 40px;
+}
+
+.waveLogo {
+  margin-right: 80px;
+}
+
+.nav-link {
+  color: #606060;
+  font-size: 17.83px;
+  font-weight: 500;
+  line-height: 26.74px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin-right: 80px;
+}
+
+.d-flex {
+  position: relative;
+  display: inline-block;
+}
+
+.d-flex input {
+  padding-left: 40px; /* Отступ для иконки */
+}
+
+.d-flex img {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px; /* Размер иконки */
+  height: 20px;
+}
+
+input::-moz-placeholder {
+  color: #C2C3CB;
+  font-family: Poppins;
+  font-size: 15.71px;
+  font-weight: 500;
+  line-height: 18.46px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+input::placeholder {
+  color: #C2C3CB;
+  font-family: Poppins;
+  font-size: 15.71px;
+  font-weight: 500;
+  line-height: 18.46px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.form-control {
+  width: 348.45px;
+  height: 57px;
+  top: 46px;
+  left: 766px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #EDEDED;
+  border-color: transparent;
+}
+
+.btn-outline-success {
+  width: 210px;
+  height: 57.34px;
+  padding: 16.17px 24.26px 16.17px 24.26px;
+  gap: 10.11px;
+  border-color: transparent;
+  border-radius: 16.17px;
+  opacity: 0px;
+  background-color: #141416;
+  font-family: Inter;
+  color: #FFFFFF;
+  font-size: 16.17px;
+  font-weight: 600;
+  line-height: 24.26px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.headerHead {
+  font-family: Poppins;
+  font-size: 75px;
+  font-weight: 600;
+  line-height: 90px;
+  letter-spacing: -3px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #141416;
+}
+
+.headerText {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: justified;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.bonusHeaderText {
+  font-weight: 600;
+}
+
+.headerButton1 {
+  width: 179px;
+  height: 60px;
+  gap: 0px;
+  border-radius: 12.41px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 16.27px;
+  font-weight: 500;
+  line-height: 24.41px;
+  letter-spacing: 0.01em;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  background-color: #000000;
+  border-color: transparent;
+}
+
+.headerButton2 {
+  width: 138px;
+  height: 60px;
+  top: 521px;
+  left: 299px;
+  gap: 0px;
+  border-radius: 12.41px;
+  border: 1.5px solid #000000;
+  opacity: 0px;
+  color: #000000;
+  background-color: transparent;
+  font-family: Poppins;
+  font-size: 16.27px;
+  font-weight: 500;
+  line-height: 24.41px;
+  letter-spacing: 0.01em;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.stats {
+  margin-top: 30px;
+}
+
+.stat {
+  font-family: Public Sans;
+  font-size: 36.77px;
+  font-weight: 600;
+  line-height: 45.96px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #141416;
+}
+
+.stat-label {
+  font-family: Inter;
+  font-size: 12.26px;
+  font-weight: 500;
+  line-height: 18.39px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #848586;
+}
+
+.weekly-top-nft {
+  background-color: #EDF2F7;
+  padding: 40px;
+}
+
+.weeklyTopHeader {
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 26.92px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #C5C5C5;
+}
+
+.card {
+  -webkit-backdrop-filter: blur(4 px);
+          backdrop-filter: blur(4 px);
+  box-shadow: 0px 4.71px 14.12px 0px rgba(28, 29, 32, 0.0784313725);
+  border: 1.18px solid rgba(28, 29, 32, 0.0784313725);
+  padding: 10px;
+  border-radius: 23.48px;
+  background-color: #FFFFFF;
+  width: 18rem;
+  margin: 0 10px;
+}
+
+.cardImg {
+  width: 252.9px;
+  height: 252.9px;
+  border-radius: 23.48px;
+}
+
+.cardHeader {
+  font-family: Poppins;
+  font-size: 21.17px;
+  font-weight: 600;
+  line-height: 29.64px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #141416;
+}
+
+.card-text {
+  font-family: Poppins;
+  font-size: 14.12px;
+  font-weight: 400;
+  line-height: 21.17px;
+  letter-spacing: 0.1176260412px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #94A3B8;
+}
+
+.cardNumber {
+  font-family: Poppins;
+  font-size: 16.47px;
+  font-weight: 500;
+  line-height: 24.7px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #141416;
+  display: inline-block;
+}
+
+.cardBtn {
+  width: 121.74px;
+  height: 51.76px;
+  padding: 9.41px 18.82px 9.41px 18.82px;
+  gap: 11.76px;
+  border-radius: 11.76px;
+  opacity: 0px;
+  color: #FFFFFF;
+  background-color: #141416;
+  font-family: Poppins;
+  font-size: 14.12px;
+  font-weight: 600;
+  line-height: 21.17px;
+  letter-spacing: 0.1176260412px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.cardBtn:hover {
+  background-color: #606060;
+}
+
+.block-control {
+  width: 166px;
+  height: 68.99px;
+  top: 1613px;
+  left: 637px;
+  border-radius: 17.25px;
+  opacity: 0px;
+  box-shadow: 0px 43.12px 34.49px -25.87px rgba(15, 15, 15, 0.1215686275);
+  background-color: #FCFCFD;
+  margin-top: 20px;
+}
+
+.lineButtons {
+  height: 100%;
+}
+
+.sliderleftButton {
+  height: 100%;
+  border-radius: 17.25px 0px 0px 17.25px;
+  padding-top: 20px;
+  padding-left: 35px;
+}
+
+.sliderRightButton {
+  height: 100%;
+  border-radius: 0px 17.25px 17.25px 0px;
+  padding-top: 20px;
+  padding-right: 30px;
+}
+
+.sliderleftButton:hover {
+  background-color: #c4c4c4;
+}
+
+.sliderRightButton:hover {
+  background-color: #c4c4c4;
+}
+
+.recentViewed {
+  width: 365px;
+  height: 246px;
+  top: 1642px;
+  left: 976px;
+  gap: 0px;
+  border: 1px;
+  border-radius: 16px;
+  opacity: 0px;
+  box-shadow: 10px 10px 50px 0px rgba(20, 20, 22, 0.1019607843);
+  border-color: #EDF2F7;
+  background-color: #FFFFFF;
+  padding: 30px;
+  margin-top: -100px;
+  margin-left: 1500px;
+}
+
+.recentViewedHeader {
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 28.35px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #1A202C;
+}
+
+.recentDots {
+  cursor: pointer;
+}
+
+.alexaHeader {
+  font-family: Poppins;
+  font-size: 15.36px;
+  font-weight: 500;
+  line-height: 21.51px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #141416;
+}
+
+.alexaText {
+  font-family: Poppins;
+  font-size: 12.48px;
+  font-weight: 400;
+  line-height: 18.72px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #64748B;
+}
+
+.recentIcon {
+  width: 17.28px;
+  height: 17.28px;
+}
+
+.recentCost {
+  font-family: Poppins;
+  font-size: 15.36px;
+  font-weight: 600;
+  line-height: 21.51px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #141416;
+  display: inline-block;
+}
+
+.recentProcent {
+  font-family: Poppins;
+  font-size: 13.44px;
+  font-weight: 400;
+  line-height: 20.17px;
+  text-align: right;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #10C352;
+}
+
+.recentProcentRed {
+  font-family: Poppins;
+  font-size: 13.44px;
+  font-weight: 400;
+  line-height: 20.17px;
+  text-align: right;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #E23333;
+}
+
+.topCollection {
+  margin-bottom: 70px;
+}
+
+.topCollectionHeader {
+  font-family: Poppins;
+  font-size: 45.04px;
+  font-weight: 600;
+  line-height: 44.75px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #141416;
+  margin-bottom: 80px;
+}
+
+.topCollectionTable {
+  background-color: #F9F9F9;
+}
+
+.topCollectionTableHeader {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28.6px;
+  letter-spacing: 0.01em;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #93989A;
+}
+
+.tableIMG {
+  width: 84px;
+  height: 84px;
+}
+
+.topCollectionTableText1 {
+  font-family: Poppins;
+  font-size: 28.01px;
+  font-weight: 500;
+  line-height: 39.22px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #141416;
+}
+
+.topCollectionTableText2 {
+  font-family: Poppins;
+  font-size: 22.76px;
+  font-weight: 400;
+  line-height: 34.14px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #64748B;
+}
+
+.topCollectionTableIcon {
+  width: 31.52px;
+  height: 31.52px;
+}
+
+.topCollectionTableVolume {
+  font-family: Poppins;
+  font-size: 24.51px;
+  font-weight: 600;
+  line-height: 34.32px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #141416;
+}
+
+.volumeCol {
+  padding-top: 25px;
+}
+
+.greenprocent {
+  font-family: Poppins;
+  font-size: 24.51px;
+  font-weight: 500;
+  line-height: 31.87px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #10C352;
+  padding-top: 25px;
+}
+
+.ownersItemsText {
+  font-family: Poppins;
+  font-size: 23.65px;
+  font-weight: 500;
+  line-height: 30.75px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #010101;
+  padding-top: 25px;
+}
+
+.explore-all {
+  text-align: end;
+}
+
+.exploreMarketplace {
+  margin-bottom: 25px;
+}
+
+.exploreMarketplaceHeader {
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 26.92px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #141416;
+  margin-bottom: 30px;
+}
+
+.exploreMarketplaceFirstRow {
+  width: 545.8px;
+  height: 57.72px;
+  top: 3097px;
+  left: 447px;
+  padding: 0px;
+  margin-bottom: 100px;
+}
+
+.firstRowBlockBorder {
+  width: Fixed 72px px;
+  height: Fixed 56px px;
+  top: 3098px;
+  left: 447px;
+  padding: 17.68px;
+  gap: 8.84px;
+  border-radius: 13.26px;
+  opacity: 0px;
+  border: 2.21px solid #141416;
+  font-family: Manrope;
+  font-size: 15.47px;
+  font-weight: 600;
+  line-height: 23.21px;
+  letter-spacing: 0.2210321426px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #1A202C;
+  cursor: pointer;
+}
+
+.firstRowBlockBorder:hover {
+  background-color: #c0c0c0;
+}
+
+.exploreMarketplaceCardRow {
+  padding-left: 280px;
+  padding-right: 280px;
+  margin-bottom: 20px;
+}
+
+.justUnleash {
+  padding: 50px;
+}
+
+.justUnleashHeader1 {
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 54.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #C5C5C5;
+}
+
+.justUnleashHeader2 {
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 54.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #18181B;
+}
+
+.parametrsBlockIMG {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 60px;
+}
+
+.parametrsBlockText {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #12141D;
+}
+
+.createNFT1 {
+  padding: 10px;
+}
+
+.createNFT2 {
+  border-radius: 30px;
+  background-color: #141416;
+}
+
+.preFooterTextBlock {
+  padding: 45px;
+  padding-left: 50px;
+}
+
+.preFooterHeader {
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 58.5px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+
+.preFooterpreHeader {
+  font-family: Poppins;
+  font-size: 20.27px;
+  font-weight: 500;
+  line-height: 26.35px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #D4D4D4;
+}
+
+.preFooterButton1 {
+  width: 183.06px;
+  height: 67.66px;
+  padding: 19.83px 25.93px 19.83px 25.93px;
+  gap: 15.25px;
+  border-radius: 12.2px;
+  opacity: 0px;
+  background-color: #FFFFFF;
+  color: #141416;
+  font-family: Outfit;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 27.76px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  border-color: transparent;
+}
+
+.preFooterButton2 {
+  width: 183.06px;
+  height: 67.66px;
+  padding: 19.83px 25.93px 19.83px 25.93px;
+  gap: 15.25px;
+  border-radius: 12.2px;
+  opacity: 0px;
+  border: 2.29px solid #FFFFFF;
+  background-color: transparent;
+}
+
+.footer {
+  height: 345px;
+  background-color: #141416;
+  padding: 60px;
+}
+
+.footerLine1 {
+  margin-bottom: 30px;
+}
+
+.footerLogo {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footerHeader {
+  font-family: Poppins;
+  font-size: 29.92px;
+  font-weight: 600;
+  line-height: 38.9px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footerHeader2 {
+  font-family: Inter;
+  font-size: 17.83px;
+  font-weight: 500;
+  line-height: 26.74px;
+  text-align: right;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #B9B9B9;
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footerLineImg {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footerRights {
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #999999;
+}
+
+.main-block-product-detail {
+  padding: 50px;
+}
+
+.main-block-product-detail-header {
+  font-family: Poppins;
+  font-size: 31.06px;
+  font-weight: 600;
+  line-height: 27.61px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #23262F;
+}
+
+.project-sun-glass {
+  padding: 100px;
+}
+
+.project-sun-glass-body {
+  width: 1248px;
+  height: 636.21px;
+  gap: 0px;
+  border-radius: 24.42px;
+  opacity: 0px;
+  background-color: #FAFAFA;
+  box-shadow: 17.56px 17.56px 61.06px 0px rgba(0, 0, 0, 0.1215686275);
+  padding: 30px;
+}
+
+.backArrow {
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+}
+
+.project-sun-glass-body-header {
+  font-family: Poppins;
+  font-size: 51.04px;
+  font-weight: 600;
+  line-height: 31.82px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #292B39;
+}
+
+.project-sun-glass-body-text-main {
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 29.14px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(136, 136, 136, 0.6980392157);
+}
+
+.doBy {
+  font-family: Poppins;
+  font-size: 17.68px;
+  font-weight: 400;
+  line-height: 26.52px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #8D8D8D;
+}
+
+.byWho {
+  font-family: Poppins;
+  font-size: 25.57px;
+  font-weight: 500;
+  line-height: 39.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #000000;
+}
+
+.currentBidText {
+  font-family: Poppins;
+  font-size: 17.86px;
+  font-weight: 400;
+  line-height: 21.98px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #8C8C8C;
+}
+
+.currentBidPoint {
+  font-family: Poppins;
+  font-size: 32.99px;
+  font-weight: 600;
+  line-height: 49.48px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #292B39;
+}
+
+.currentBidDate {
+  font-family: Poppins;
+  font-size: 19.23px;
+  font-weight: 400;
+  line-height: 30.23px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #000000;
+}
+
+.currentBidButton {
+  width: 100%;
+  height: 78.97px;
+  gap: 16.28px;
+  border-radius: 19.62px;
+  opacity: 0px;
+  background-color: #141416;
+  border: transparent;
+  color: #FFFFFF;
+  font-family: Poppins;
+  font-size: 18.39px;
+  font-weight: 700;
+  line-height: 28.21px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.currentBidButton:hover {
+  background-color: #212124;
+}
+
+.currentBidButtonSVG {
+  margin-right: 20px;
+}
+
+.project-sun-glass-IMG {
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  width: 100%;
+  height: 732.56px;
+  gap: 0px;
+  border-radius: 21.2px;
+  opacity: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2.12px solid #000000;
+  padding: 10px;
+}
+
+.modalCLoseButton {
+  width: 100%;
+  gap: 11.25px;
+  border-radius: 18.01px;
+  opacity: 0px;
+  background-color: #141416;
+  color: #FFFFFF;
+  font-family: Poppins;
+  font-size: 16.88px;
+  font-weight: 600;
+  line-height: 25.88px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}/*# sourceMappingURL=styles.css.map */

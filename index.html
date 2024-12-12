@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Практика 3</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <!-- Логотип -->
+                <img class="img-fluid waveLogo" src="/content/WaveLogo.svg" style="max-width: 100px;">
+                
+                <!-- Кнопка для мобильного меню -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Основное меню -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">DISCOVER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CREATORS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SELL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">STATS</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Форма поиска и кнопка -->
+                    <form class="d-flex" role="search">
+                        <img class="img-fluid" src="/content/SearchIcon.svg" style="max-width: 20px;">
+                        <input class="form-control me-2" type="search" placeholder="Search Art Work / Creator" aria-label="Search">
+                        <button class="btn btn-outline-success text-center" type="button" data-bs-toggle="modal" data-bs-target="#bidModal">CONNECT WALLET</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Модальное окно -->
+        <div class="modal fade" id="bidModal" tabindex="-1" aria-labelledby="bidModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content mx-auto">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bidModalLabel">History of Bid</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Only</td>
+                                    <td>14,2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Repo</td>
+                                    <td>1.75</td>
+                                </tr>
+                                <tr>
+                                    <td>May 17,2022 at 12:08</td>
+                                    <td>Trovo</td>
+                                </tr>
+                                <tr>
+                                    <td>May 18,2022 at 12:09</td>
+                                    <td>1.57</td>
+                                </tr>
+                                <tr>
+                                    <td>Jennifer</td>
+                                    <td>May 18,2022 at 6:08</td>
+                                </tr>
+                                <tr>
+                                    <td>1.44</td>
+                                    <td>Your Bid</td>
+                                </tr>
+                                <tr>
+                                    <td>ETH</td>
+                                    <td>Submit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary modalCLoseButton" data-bs-dismiss="modal">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal-centered fade" id="bidModal" tabindex="-1" aria-labelledby="bidModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bidModalLabel">History of Bid</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Only</td>
+                                    <td>14,2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Repo</td>
+                                    <td>1.75</td>
+                                </tr>
+                                <tr>
+                                    <td>May 17,2022 at 12:08</td>
+                                    <td>Trovo</td>
+                                </tr>
+                                <tr>
+                                    <td>May 18,2022 at 12:09</td>
+                                    <td>1.57</td>
+                                </tr>
+                                <tr>
+                                    <td>Jennifer</td>
+                                    <td>May 18,2022 at 6:08</td>
+                                </tr>
+                                <tr>
+                                    <td>1.44</td>
+                                    <td>Your Bid</td>
+                                </tr>
+                                <tr>
+                                    <td>ETH</td>
+                                    <td>Submit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary modalCLoseButton" data-bs-dismiss="modal">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nft-marketplace">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="/content/HeaderLine.svg" class="img-fluid">
+                        <p class="headerHead">Discover And Create NFTs</p>
+                        <p class="headerText">Discover, Create and Sell NFTs On Our NFT Marketplace With Over Thousands Of NFTs And Get a <span class="bonusHeaderText">$20 bonus.</span></p>
+                        <div>
+                            <button class="btn btn-primary headerButton1">EXPLORE MORE</button>
+                            <button class="btn btn-secondary headerButton2">CREATE NFT</button>
+                        </div>
+                        <div class="stats">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="stat">430K+</div>
+                                    <div class="stat-label">Art Works</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat">150K+</div>
+                                    <div class="stat-label">Creators</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat">87K+</div>
+                                    <div class="stat-label">Collections</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/content/Hero Header.png" alt="NFT Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5 weekly-top-nft">
+            <h1 class="text-center mb-4 weeklyTopHeader">Weekly Top NFTs</h1>
+            <div id="nftCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card mx-auto">
+                            <img src="/content/cardImg1.png" class="cardImg card-img-top mx-auto" alt="NFT 1">
+                            <div class="card-body">
+                                <p class="cardHeader">Sun-Glass</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="card-text">Current bid</p>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <img class="img" src="/content/mdi_ethereum.svg">
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <p class="cardNumber">1.75</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="cardBtn">PLACE BID</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto">
+                            <img src="/content/cardImg2.png" class="cardImg card-img-top mx-auto" alt="NFT 2">
+                            <div class="card-body">
+                                <p class="cardHeader">Sun-Glass</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="card-text">Current bid</p>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <img class="img" src="/content/mdi_ethereum.svg">
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <p class="cardNumber">1.75</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="cardBtn">PLACE BID</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto">
+                            <img src="/content/cardImg3.png" class="cardImg card-img-top mx-auto" alt="NFT 3">
+                            <div class="card-body">
+                                <p class="cardHeader">Sun-Glass</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="card-text">Current bid</p>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <img class="img" src="/content/mdi_ethereum.svg">
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <p class="cardNumber">1.75</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="cardBtn">PLACE BID</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto">
+                            <img src="/content/cardImg4.png" class="cardImg card-img-top м" alt="NFT 3">
+                            <div class="card-body">
+                                <p class="cardHeader">NuEvey</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="card-text">Current bid</p>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <img class="img" src="/content/mdi_ethereum.svg">
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <p class="cardNumber">1.25</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="cardBtn">PLACE BID</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto">
+                            <img src="/content/cardImg5.png" class="cardImg card-img-top mx-auto" alt="NFT 3">
+                            <div class="card-body">
+                                <p class="cardHeader">NuEvey</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="card-text">Current bid</p>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <img class="img" src="/content/mdi_ethereum.svg">
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <p class="cardNumber">1.25</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="cardBtn">PLACE BID</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Контролы слайдера -->
+                <div class="block-control mx-auto">
+                    <div class="row lineButtons align-items-center">
+                        <div class="col-5 sliderleftButton" id="sliderLeftButton" type="button">
+                            <img src="/content/leftLine.svg" class="img">
+                        </div>
+                        <div class="col-2">
+                            <img src="/content/halfLine.png" class="img">
+                        </div>
+                        <div class="col-5 sliderRightButton" id="sliderRightButton" type="button">
+                            <img src="/content/rightLine.svg" class="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="recentViewed">
+            <div class="row">
+                <div class="col-10">
+                    <p class="recentViewedHeader">
+                        Recent Viewed
+                    </p>
+                </div>
+                <div class="col-2">
+                    <img src="/content/dots-vertical.svg" class="img recentDots">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"><img src="/content/alexca.png" class="img"></div>
+                <div class="col-6"><p class="alexaHeader">Alex Ca.</p><p class="alexaText">Alexy</p></div>
+                <div class="col-4">
+                    <div class="row text-center">
+                        <div class="col-md-auto">
+                            <img src="/content/mdi_ethereum.svg" class="img recentIcon">
+                        </div>
+                        <div class="col-md-auto">
+                            <p class="recentCost">8,456</p>
+                        </div>
+                    </div>
+                    <p class="recentProcent">+23,00%</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"><img src="/content/juliyas.png" class="img"></div>
+                <div class="col-6"><p class="alexaHeader">Juliya S.</p><p class="alexaText">JuliyaS</p></div>
+                <div class="col-4">
+                    <div class="row text-center">
+                        <div class="col-md-auto">
+                            <img src="/content/mdi_ethereum.svg" class="img recentIcon">
+                        </div>
+                        <div class="col-md-auto">
+                            <p class="recentCost">5,327</p>
+                        </div>
+                    </div>
+                    <p class="recentProcentRed">-32,01%</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid topCollection mx-auto">
+            <div class="topCollectionHeader text-center">Top Collection</div>
+            <div class="table-responsive">
+                <table class="table topCollectionTable">
+                    <thead>
+                        <tr>
+                            <th><p class="topCollectionTableHeader">Collection</p></th>
+                            <th><p class="topCollectionTableHeader">Volume</p></th>
+                            <th><p class="topCollectionTableHeader">24h %</p></th>
+                            <th><p class="topCollectionTableHeader">Floor Price</p></th>
+                            <th class="d-none d-md-table-cell"><p class="topCollectionTableHeader">Owners</p></th>
+                            <th class="d-none d-md-table-cell"><p class="topCollectionTableHeader">Items</p></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="tableIMG" src="/content/topCollection1.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="topCollectionTableText1">Alex Ca.</p>
+                                        <p class="topCollectionTableText2">By Alex</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="volumeColHeight">
+                                <div class="row volumeCol">
+                                    <div class="col-2">
+                                        <img src="/content/mdi_ethereum.svg" class="topCollectionTableIcon img">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="topCollectionTableVolume">8,456</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><p class="greenprocent">+27.78%</p></td>
+                            <td>
+                                <div class="row volumeCol">
+                                    <div class="col-2">
+                                        <img src="/content/mdi_ethereum.svg" class="topCollectionTableIcon img">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="topCollectionTableVolume">3,5</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="d-none d-md-table-cell"><p class="ownersItemsText">2.2K</p></td>
+                            <td class="d-none d-md-table-cell"><p class="ownersItemsText">500</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="tableIMG" src="/content/topCollection2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="topCollectionTableText1">Alex Ca.</p>
+                                        <p class="topCollectionTableText2">By Alex</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="volumeColHeight">
+                                <div class="row volumeCol">
+                                    <div class="col-2">
+                                        <img src="/content/mdi_ethereum.svg" class="topCollectionTableIcon img">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="topCollectionTableVolume">4,780</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><p class="greenprocent">+27.78%</p></td>
+                            <td>
+                                <div class="row volumeCol">
+                                    <div class="col-2">
+                                        <img src="/content/mdi_ethereum.svg" class="topCollectionTableIcon img">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="topCollectionTableVolume">7,9</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="d-none d-md-table-cell"><p class="ownersItemsText">3.4K</p></td>
+                            <td class="d-none d-md-table-cell"><p class="ownersItemsText">900</p></td>
+                        </tr>
+                        <!-- Повторяющиеся строки -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="explore-all">
+                <a href="#"><img src="/content/View All.png" class="img"></a>
+            </div>
+        </div>
+
+        <div class="container-fluid exploreMarketplace mx-auto">
+            <p class="exploreMarketplaceHeader text-center">Explore Marketplace</p>
+        
+            <!-- Первая строка с фильтрами -->
+            <div class="row exploreMarketplaceFirstRow mx-auto">
+                <div class="col-6 col-md-2 firstRowBlockBorder text-center">All</div>
+                <div class="col-6 col-md-3 firstRowBlockBorder text-center">
+                    <img src="/content/List.svg" class="img">Category
+                </div>
+                <div class="col-6 col-md-4 firstRowBlockBorder text-center">
+                    <img src="/content/Voice Id.svg" class="img">Collection
+                </div>
+                <div class="col-6 col-md-3 firstRowBlockBorder text-center">
+                    <img src="/content/Dollar.svg" class="img">Price
+                </div>
+            </div>
+        
+            <!-- Карточки -->
+            <div class="row exploreMarketplaceCardRow mx-auto">
+                <!-- Карточка 1 -->
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="/content/cardImg1.png" class="cardImg card-img-top mx-auto" alt="NFT 1">
+                        <div class="card-body">
+                            <p class="cardHeader">Sun-Glass</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="card-text">Current bid</p>
+                                    <div class="row">
+                                        <div class="col-md-auto">
+                                            <img class="img" src="/content/mdi_ethereum.svg">
+                                        </div>
+                                        <div class="col-md-auto">
+                                            <p class="cardNumber">1.75</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <form action="/projectSunGlass1.html">
+                                        <button class="cardBtn">PLACE BID</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 2 -->
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="/content/cardImg2.png" class="cardImg card-img-top mx-auto" alt="NFT 1">
+                        <div class="card-body">
+                            <p class="cardHeader">Sun-Glass</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="card-text">Current bid</p>
+                                    <div class="row">
+                                        <div class="col-md-auto">
+                                            <img class="img" src="/content/mdi_ethereum.svg">
+                                        </div>
+                                        <div class="col-md-auto">
+                                            <p class="cardNumber">1.75</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <form action="/projectSunGlass2.html">
+                                        <button class="cardBtn">PLACE BID</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 3 -->
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="/content/cardImg3.png" class="cardImg card-img-top mx-auto" alt="NFT 1">
+                        <div class="card-body">
+                            <p class="cardHeader">Sun-Glass</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="card-text">Current bid</p>
+                                    <div class="row">
+                                        <div class="col-md-auto">
+                                            <img class="img" src="/content/mdi_ethereum.svg">
+                                        </div>
+                                        <div class="col-md-auto">
+                                            <p class="cardNumber">1.75</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <form action="/projectSunGlass3.html">
+                                        <button class="cardBtn">PLACE BID</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 4 -->
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="/content/cardImg4.png" class="cardImg card-img-top mx-auto" alt="NFT 1">
+                        <div class="card-body">
+                            <p class="cardHeader">NuEvey</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="card-text">Current bid</p>
+                                    <div class="row">
+                                        <div class="col-md-auto">
+                                            <img class="img" src="/content/mdi_ethereum.svg">
+                                        </div>
+                                        <div class="col-md-auto">
+                                            <p class="cardNumber">1.25</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <form action="/NuEvey.html">
+                                        <button class="cardBtn">PLACE BID</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Вторая строка карточек -->
+            <div class="row exploreMarketplaceCardRow mx-auto">
+                <!-- Карточка 5 -->
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="/content/cardImg3.png" class="cardImg card-img-top mx-auto" alt="NFT 1">
+                        <div class="card-body">
+                            <p class="cardHeader">Sun-Glass</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="card-text">Current bid</p>
+                                    <div class="row">
+                                        <div class="col-md-auto">
+                                            <img class="img" src="/content/mdi_ethereum.svg">
+                                        </div>
+                                        <div class="col-md-auto">
+                                            <p class="cardNumber">1.75</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <form action="/projectSunGlass3.html">
+                                        <button class="cardBtn">PLACE BID</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 6 -->
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="/content/cardImg4.png" class="cardImg card-img-top mx-auto" alt="NFT 1">
+                        <div class="card-body">
+                            <p class="cardHeader">NuEvey</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="card-text">Current bid</p>
+                                    <div class="row">
+                                        <div class="col-md-auto">
+                                            <img class="img" src="/content/mdi_ethereum.svg">
+                                        </div>
+                                        <div class="col-md-auto">
+                                            <p class="cardNumber">1.25</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <form action="/NuEvey.html">
+                                        <button class="cardBtn">PLACE BID</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 7 -->
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="/content/cardImg2.png" class="cardImg card-img-top mx-auto" alt="NFT 1">
+                        <div class="card-body">
+                            <p class="cardHeader">Sun-Glass</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="card-text">Current bid</p>
+                                    <div class="row">
+                                        <div class="col-md-auto">
+                                            <img class="img" src="/content/mdi_ethereum.svg">
+                                        </div>
+                                        <div class="col-md-auto">
+                                            <p class="cardNumber">1.75</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <form action="/projectSunGlass2.html">
+                                        <button class="cardBtn">PLACE BID</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 8 -->
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="/content/cardImg1.png" class="cardImg card-img-top mx-auto" alt="NFT 1">
+                        <div class="card-body">
+                            <p class="cardHeader">Sun-Glass</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="card-text">Current bid</p>
+                                    <div class="row">
+                                        <div class="col-md-auto">
+                                            <img class="img" src="/content/mdi_ethereum.svg">
+                                        </div>
+                                        <div class="col-md-auto">
+                                            <p class="cardNumber">1.75</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <form action="/projectSunGlass1.html">
+                                        <button class="cardBtn">PLACE BID</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Кнопка "View All" -->
+            <div class="explore-all">
+                <a href="#"><img src="/content/View All.png" class="img"></a>
+            </div>
+        </div>
+
+        <div class="container-fluid justUnleash">
+            <div class="row">
+                <!-- Левая колонка с текстом -->
+                <div class="col-12 col-md-6">
+                    <p class="justUnleashHeader1">Just Unleash -</p>
+                    <p class="justUnleashHeader2">Your Inner Collector</p>
+                    <div class="parametrsBlock">
+                        <!-- Параметры -->
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="/content/okIcon.svg" class="img parametrsBlockIMG">
+                            </div>
+                            <div class="col-10">
+                                <p class="parametrsBlockText">Best Seller All Around World</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="/content/okIcon.svg" class="img parametrsBlockIMG">
+                            </div>
+                            <div class="col-10">
+                                <p class="parametrsBlockText">$2M+ Transections Every Day</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="/content/okIcon.svg" class="img parametrsBlockIMG">
+                            </div>
+                            <div class="col-10">
+                                <p class="parametrsBlockText">Secure Transactions</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="/content/okIcon.svg" class="img parametrsBlockIMG">
+                            </div>
+                            <div class="col-10">
+                                <p class="parametrsBlockText">Exclusive Collections From Sellers</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="/content/okIcon.svg" class="img parametrsBlockIMG">
+                            </div>
+                            <div class="col-10">
+                                <p class="parametrsBlockText">Easy Buying and Selling</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="/content/okIcon.svg" class="img parametrsBlockIMG">
+                            </div>
+                            <div class="col-10">
+                                <p class="parametrsBlockText">Join Our Community</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cardBtn">PLACE BID</button>
+                </div>
+                <!-- Правая колонка с изображением -->
+                <div class="col-12 col-md-6">
+                    <img src="/content/JustUnleashIMG.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid createNFT1">
+            <div class="createNFT2">
+                <div class="row">
+                    <!-- Левая колонка с текстом -->
+                    <div class="col-12 col-md-6 preFooterTextBlock">
+                        <p class="preFooterHeader">Create and Sell NFTs</p>
+                        <p class="preFooterpreHeader">World’s Largest NFT Place</p>
+                        <div class="row">
+                            <div class="col-6"><button class="btn btn-primary preFooterButton1">Explore More</button></div>
+                            <div class="col-6"><button class="btn btn-secondary preFooterButton2">CREATE NFT</button></div>
+                        </div>
+                    </div>
+                    <!-- Пустая колонка -->
+                    <div class="col-0 col-md-3"></div>
+                    <!-- Правая колонка с изображением -->
+                    <div class="col-12 col-md-3">
+                        <img src="/content/CreateNFTs.png" class="img-fluid align-self-end">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid footer">
+            <!-- Первая строка футера -->
+            <div class="row footerLine1">
+                <div class="col-3 col-md-1"><img src="/content/footerLogo.svg" class="img footerLogo"></div>
+                <div class="col-9 col-md-11 d-flex align-items-center">
+                    <div class="col-12 col-md-2"><p class="footerHeader">DiveSea</p></div>
+                    <div class="col-12 col-md-4"></div>
+                    <div class="col-6 col-md-2"><p class="footerHeader2">Privacy Policy</p></div>
+                    <div class="col-6 col-md-2"><p class="footerHeader2">Term & Conditions</p></div>
+                    <div class="col-6 col-md-1"><p class="footerHeader2">About Us</p></div>
+                    <div class="col-6 col-md-1"><p class="footerHeader2">Contact</p></div>
+                </div>
+            </div>
+        
+            <!-- Линия разделения -->
+            <img src="/content/footerLine.svg" class="img-fluid footerLineImg">
+        
+            <!-- Вторая строка футера -->
+            <div class="row mx-auto footerLine2">
+                <div class="col-12 col-md-3"><p class="footerRights">© 2023 EATLY All Rights Reserved.</p></div>
+                <div class="col-12 col-md-5"></div>
+                <div class="col-3 col-md-1"><img src="/content/footerInst.svg" class="img rounded float-end"></div>
+                <div class="col-3 col-md-1"><img src="/content/footerIn.svg" class="img rounded float-end"></div>
+                <div class="col-3 col-md-1"><img src="/content/footerFacebook.svg" class="img rounded float-end"></div>
+                <div class="col-3 col-md-1"><img src="/content/footerTwitter.svg" class="img rounded float-end"></div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var carousel = document.getElementById('nftCarousel');
+                var sliderLeftButton = document.getElementById('sliderLeftButton');
+                var sliderRightButton = document.getElementById('sliderRightButton');
+        
+                sliderLeftButton.addEventListener('click', function() {
+                    $(carousel).carousel('prev');
+                });
+        
+                sliderRightButton.addEventListener('click', function() {
+                    $(carousel).carousel('next');
+                });
+            });
+        </script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
